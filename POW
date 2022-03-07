@@ -1,0 +1,27 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main()
+{
+    int x1;
+    int y1;
+    int x2;
+    int y2;
+    float dist;
+
+    printf("Ingrese las coordenadas del punto P1\n");
+    printf ("x1:  ");
+    scanf("%d",&x1);
+    printf("\ny1 : ");
+    scanf("%d",&y1);
+    
+     printf("Ingrese las coordenadas del punto P2\n");
+    printf ("x2:  ");
+    scanf("%d",&x2);
+    printf("\ny2 : ");
+    scanf("%d",&y2);
+     
+    dist=pow(pow(x1-x2,2)+ pow(y1-y2,2),0.5);
+    printf("EL REDULTADO ES : %.F",dist);
+    return 0;
+}
