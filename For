@@ -1,0 +1,55 @@
+#include <stdio.h>
+int main()
+{
+ int cantRemeras, cantJean, cantCampera, cantCalzas, cantPollera;
+ float PFDescuento;
+ int posXL = 2;
+ int posYL = 3;
+ int X;
+ int Y;
+int cantTotal ;
+ for(int i=1;i<=2;i++){
+
+ printf("\n*********LAS LOCAS******\n");
+ printf("*PRODUCTO        *PRECIO\n");
+ printf("*Remera          *2500  \n");
+ printf("*Jean            *5000  \n");
+ printf("*Campera         *8000  \n");
+ printf("*Calzas          *3000  \n");
+ printf("*Pollera         *3500  \n");
+ printf("************************\n");
+ printf("\nINGRESE LA CANTIDAD DE REMERAS QUE DESEA LLEVAR:");
+ scanf("%d",&cantRemeras);
+ printf("\nINGRESE LA CANTIDAD DE JEANS QUE DESEA LLEVAR:");
+ scanf("%d",&cantJean);
+ printf("\nINGRESE LA CANTIDAD DE CAMPERAS QUE DESEA LLEVAR:");
+ scanf("%d",&cantCampera);
+ printf("\nINGRESE LA CANTIDAD DE CALZAS QUE DESEA LLEVAR:");
+ scanf("%d",&cantCalzas);
+ printf("\nINGRESE LA CANTIDAD DE POLLERAS QUE DESEA LLEVAR:");
+ scanf("%d",&cantPollera);
+ printf("Ingrese las coordenadas en x para el envio");
+ printf("X: ");
+  scanf("%d",&X);
+
+   printf("Ingrese las coordenadas en y para el envio");
+   printf("Y: ");
+  scanf("%d",&Y);
+
+
+ float dist;
+ dist=pow(pow(posXL-X,2)+pow(posYL-Y,2),0.5);
+
+float preciodeenvio= dist*120;
+
+printf("Precio de envio:%.2f",preciodeenvio);
+ int precio = cantRemeras*2500 + cantJean*5000 + cantCampera*8000 + cantCalzas*3000 + cantPollera*3500;
+
+  cantTotal = cantRemeras+cantJean+cantCampera+cantCalzas+cantPollera ;
+  if (cantTotal>=5) {
+  PFDescuento=precio-0.25*precio;
+  printf("Precio final (con descuento) : %.2f",PFDescuento);}
+  else{printf("Precio final :%d",precio);}
+
+ }
+}
