@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<math.h>
+
+
+int main()
+{
+    int num[4];
+    int doble;
+    int cuadrado;
+    float raiz;
+
+
+    for(int i = 0;i<=4;i++)
+    {
+        printf("\nINGRESE NUMERO :");
+        scanf("%d",&num[i]);
+    }
+
+    for(int i = 0;i<=4;i++)
+    {
+     doble=num[i]*2;
+     printf("\nEL DOBLE ES :%d",doble);
+
+    }
+
+
+    for(int i = 0;i<=4;i++)
+    {
+     cuadrado=pow(num[i],2);
+     printf("\nCUADRADO ES :%d",cuadrado);
+    }
+
+    for(int i = 0;i<=4;i++)
+    {
+     raiz=pow(num[i],0.5);
+     printf("\nRAIZ ES :%.2f",raiz);
+    }
+
+
+}
