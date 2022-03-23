@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main ()
+{
+	int fechas [2][3];
+	
+	
+	for(int i = 1;i<=2;i++)
+	{
+	 printf("\nIngrese la fecha de nacimiento");
+	 printf("\nIngrese el dia de  : ");
+	 scanf("%d",&fechas[i-1][0]);
+	 printf("\nIngrese el mes de  : ");
+	 scanf("%d",&fechas[i-1][1]);
+	 printf("\nIngrese el anio de  : ");
+	 scanf("%d",&fechas[i-1][2]);
+    }
+    
+  printf("PERSONA  DIA   MES  ANIO\n");
+   for(int i = 1;i<=2;i++)
+	{
+    printf(" %d     %d       %d      %d\n",i,fechas[i-1][0],fechas[i-1][1],fechas[i-1][2]);
+    }
+    return 0;
+}
